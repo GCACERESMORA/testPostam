@@ -1,0 +1,98 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Account",
+		"_postman_id": "c5392b05-9e62-3354-5d3f-144f648c14b0",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Conseguir debts",
+			"request": {
+				"url": {
+					"raw": "http://api.mp.internal.ml.com/reserves/user/386602626/search?reason=reserve_for_debt_payment&status=reserved",
+					"protocol": "http",
+					"host": [
+						"api",
+						"mp",
+						"internal",
+						"ml",
+						"com"
+					],
+					"path": [
+						"reserves",
+						"user",
+						"386602626",
+						"search"
+					],
+					"query": [
+						{
+							"key": "reason",
+							"value": "reserve_for_debt_payment"
+						},
+						{
+							"key": "status",
+							"value": "reserved"
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Caller-Scopes",
+						"value": "admin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Debt charges info",
+			"request": {
+				"url": "http://api.mp.internal.ml.com/debts/charges/54840826",
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Caller-Scopes",
+						"value": "admin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Debt info",
+			"request": {
+				"url": "http://api.mp.internal.ml.com/debts/38641378",
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Caller-Scopes",
+						"value": "admin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
